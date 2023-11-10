@@ -1,5 +1,57 @@
 self.__RSC_MANIFEST={
   "__ssr_module_mapping__": {
+    "(app-client)/./app/components/Header.tsx": {
+      "": {
+        "id": "(sc_client)/./app/components/Header.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./app/components/Header.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/Header.tsx",
+        "name": "default",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "default",
+        "chunks": [
+          "app/search/page:app/search/page"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/components/app-router.js": {
       "": {
         "id": "(sc_client)/./node_modules/next/dist/client/components/app-router.js",
@@ -107,14 +159,89 @@ self.__RSC_MANIFEST={
   },
   "__edge_ssr_module_mapping__": {},
   "__entry_css_files__": {
-    "/Users/catagarrido/Documents/GitHub/udemy/app/page": [
-      "static/css/_app-client_node_modules_next_font_google_target_css_path_app_page_tsx_import_Inter_arguments-2f8da4.css"
-    ],
-    "/Users/catagarrido/Documents/GitHub/udemy/app/layout": [
+    "/Users/diegosolerolguin/Documents/programming/udemy/udemy/app/layout": [
       "static/css/_app-client_app_globals_css.css"
     ]
   },
-  "/Users/catagarrido/Documents/GitHub/udemy/node_modules/next/dist/client/components/app-router.js": {
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/app/components/Header.tsx": {
+    "": {
+      "id": "(app-client)/./app/components/Header.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./app/components/Header.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./app/components/Header.tsx",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    }
+  },
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/node_modules/next/dist/client/link.js": {
+    "": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    }
+  },
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/node_modules/next/dist/esm/client/link.js": {
+    "": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/search/page:app/search/page"
+      ],
+      "async": false
+    }
+  },
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/node_modules/next/dist/client/components/app-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
@@ -140,7 +267,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/catagarrido/Documents/GitHub/udemy/node_modules/next/dist/esm/client/components/app-router.js": {
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/node_modules/next/dist/esm/client/components/app-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
       "name": "",
@@ -166,7 +293,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/catagarrido/Documents/GitHub/udemy/node_modules/next/dist/client/components/error-boundary.js": {
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/node_modules/next/dist/client/components/error-boundary.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
@@ -192,7 +319,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/catagarrido/Documents/GitHub/udemy/node_modules/next/dist/esm/client/components/error-boundary.js": {
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/node_modules/next/dist/esm/client/components/error-boundary.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
       "name": "",
@@ -218,7 +345,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/catagarrido/Documents/GitHub/udemy/node_modules/next/dist/client/components/layout-router.js": {
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/node_modules/next/dist/client/components/layout-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
@@ -244,7 +371,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/catagarrido/Documents/GitHub/udemy/node_modules/next/dist/esm/client/components/layout-router.js": {
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/node_modules/next/dist/esm/client/components/layout-router.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
       "name": "",
@@ -270,7 +397,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/catagarrido/Documents/GitHub/udemy/node_modules/next/dist/client/components/render-from-template-context.js": {
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/node_modules/next/dist/client/components/render-from-template-context.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
@@ -296,7 +423,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/catagarrido/Documents/GitHub/udemy/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
     "": {
       "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
       "name": "",
@@ -322,16 +449,7 @@ self.__RSC_MANIFEST={
       "async": false
     }
   },
-  "/Users/catagarrido/Documents/GitHub/udemy/node_modules/@next/font/google/target.css?{\"path\":\"app/page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}": {
-    "default": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/_app-client_node_modules_next_font_google_target_css_path_app_page_tsx_import_Inter_arguments-2f8da4.css"
-      ]
-    }
-  },
-  "/Users/catagarrido/Documents/GitHub/udemy/app/globals.css": {
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/app/globals.css": {
     "default": {
       "id": "null",
       "name": "default",
