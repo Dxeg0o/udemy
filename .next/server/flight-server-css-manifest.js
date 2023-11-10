@@ -1,13 +1,13 @@
 self.__RSC_CSS_MANIFEST={
   "__entry_css_mods__": {
-    "/Users/catagarrido/Documents/GitHub/udemy/app/page": [
-      "/Users/catagarrido/Documents/GitHub/udemy/app/globals.css"
+    "/Users/diegosolerolguin/Documents/programming/udemy/udemy/app/page": [
+      "/Users/diegosolerolguin/Documents/programming/udemy/udemy/app/globals.css"
+    ],
+    "/Users/diegosolerolguin/Documents/programming/udemy/udemy/app/restaurant/[slug]/page": [
+      "/Users/diegosolerolguin/Documents/programming/udemy/udemy/app/globals.css"
     ]
   },
-  "/Users/catagarrido/Documents/GitHub/udemy/app/layout.tsx": [
-    "/Users/catagarrido/Documents/GitHub/udemy/app/globals.css"
-  ],
-  "/Users/catagarrido/Documents/GitHub/udemy/app/page.tsx": [
-    "/Users/catagarrido/Documents/GitHub/udemy/node_modules/@next/font/google/target.css?{\"path\":\"app/page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
+  "/Users/diegosolerolguin/Documents/programming/udemy/udemy/app/layout.tsx": [
+    "/Users/diegosolerolguin/Documents/programming/udemy/udemy/app/globals.css"
   ]
 }
