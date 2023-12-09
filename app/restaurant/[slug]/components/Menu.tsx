@@ -1,18 +1,25 @@
+import { Item } from "@prisma/client";
 import MenuCard from "./MenuCard";
 
-export default function Menu() {
+export default function Menu({ menu }: { menu: Item[] }) {
   return (
-    <div className="bg-white mt-10">
+    <main className="bg-white mt-10">
       <div className="">
         <div className="mt-4 pb-4 mb-1">
           <h1 className="font-bold text-4xl">Menu</h1>
         </div>
-        <div className="flex flex-wrap justify-between">
-          {/* MENU CARD*/}
-          <MenuCard />
-          {/* MENU CARD*/}
-        </div>
+        {menu.length ? (
+          <div className="flex flex-wrap justify-between">
+            {menu.map((item) => (
+              <MenuCard key={item.id} item={item} />
+            ))}
+          </div>
+        ) : (
+          <div className="flex flex-wrap justify-between">
+            <p className="This restaurant does not have a menú"></p>
+          </div>
+        )}
       </div>
-    </div>
+    </main>
   );
 }
