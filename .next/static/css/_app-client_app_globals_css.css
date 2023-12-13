@@ -656,6 +656,9 @@ video {
 .w-16 {
   width: 4rem;
 }
+.w-40 {
+  width: 10rem;
+}
 .max-w-screen-2xl {
   max-width: 1536px;
 }
