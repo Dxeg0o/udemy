@@ -1,5 +1,10 @@
 {
   "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -9,11 +14,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/head.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
     ],
     "/restaurant/[slug]/page": [
       "static/chunks/webpack.js",
@@ -30,6 +30,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/restaurant/[slug]/head.js"
     ],
+    "/restaurant/[slug]/menu/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/restaurant/[slug]/menu/page.js"
+    ],
+    "/restaurant/[slug]/menu/head": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/restaurant/[slug]/menu/head.js"
+    ],
     "/search/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -40,15 +50,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/search/head.js"
     ],
-    "/restaurant/[slug]/menu/page": [
+    "/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/restaurant/[slug]/menu/page.js"
+      "static/chunks/app/loading.js"
     ],
-    "/restaurant/[slug]/menu/head": [
+    "/restaurant/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/restaurant/[slug]/menu/head.js"
+      "static/chunks/app/restaurant/loading.js"
+    ],
+    "/restaurant/error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/restaurant/error.js"
+    ],
+    "/restaurant/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/restaurant/not-found.js"
     ]
   }
 }
