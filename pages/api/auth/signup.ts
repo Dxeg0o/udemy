@@ -3,6 +3,7 @@ import validator from "validator";
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcrypt";
 import * as jose from "jose";
+import { setCookie } from "cookies-next";
 
 const prisma = new PrismaClient();
 
@@ -19,38 +20,38 @@ export default async function handler(
           min: 1,
           max: 20,
         }),
-        errorMesage: "First name is invalid",
+        errorMessage: "First name is invalid",
       },
       {
         valid: validator.isLength(lastName, {
           min: 1,
           max: 20,
         }),
-        errorMesage: "Last name is invalid",
+        errorMessage: "Last name is invalid",
       },
       {
         valid: validator.isEmail(email),
-        errorMesage: "Email is invalid",
+        errorMessage: "Email is invalid",
       },
       {
         valid: validator.isMobilePhone(phone),
-        errorMesage: "Phone number is invalid",
+        errorMessage: "Phone number is invalid",
       },
       {
         valid: validator.isLength(city, {
           min: 1,
         }),
-        errorMesage: "City is invalid",
+        errorMessage: "City is invalid",
       },
       {
         valid: validator.isStrongPassword(password),
-        errorMesage: "Password is not strong enough",
+        errorMessage: "Password is not strong enough",
       },
     ];
 
     validationSchema.forEach((check) => {
       if (!check.valid) {
-        errors.push(check.errorMesage);
+        errors.push(check.errorMessage);
       }
     });
     if (errors.length) {
@@ -86,9 +87,14 @@ export default async function handler(
       .setProtectedHeader({ alg })
       .setExpirationTime("24h")
       .sign(secret);
+    setCookie("jwt", token, { req, res, maxAge: 60 * 6 * 24 });
 
     return res.status(200).json({
-      hello: user,
+      firstName: user.first_name,
+      lastName: user.last_name,
+      email: user.email,
+      phone: user.phone,
+      city: user.city,
     });
   }
   return res.status(404).json("Unknown endpoint");
