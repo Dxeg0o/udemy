@@ -11,7 +11,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  //   await prisma.table.deleteMany();
+  await prisma.table.deleteMany();
   await prisma.review.deleteMany();
   await prisma.item.deleteMany();
   await prisma.restaurant.deleteMany();
@@ -1301,6 +1301,22 @@ export default async function handler(
         rating: 4,
         restaurant_id: utsavId,
         user_id: userCassidy.id,
+      },
+    ],
+  });
+  await prisma.table.createMany({
+    data: [
+      {
+        restaurant_id: vivaanId,
+        seats: 4,
+      },
+      {
+        restaurant_id: vivaanId,
+        seats: 4,
+      },
+      {
+        restaurant_id: vivaanId,
+        seats: 2,
       },
     ],
   });
