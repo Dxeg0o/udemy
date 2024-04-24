@@ -16,7 +16,7 @@ export default async function handler(
 
   if (!day || !time || !partySize) {
     return res.status(400).json({
-      errorMessage: "Invalid data provideasdd",
+      errorMessage: "Invalid data provided",
     });
   }
 
@@ -26,7 +26,7 @@ export default async function handler(
 
   if (!searchTimes) {
     return res.status(400).json({
-      errorMessage: "Invalid data provideddd",
+      errorMessage: "Invalid data provided",
     });
   }
   const bookings = await prisma.booking.findMany({
@@ -107,5 +107,5 @@ export default async function handler(
 
       return timeIsAfterOpeningHour && timeIsBeforeClosingHour;
     });
-  return res.json({ availabilities });
+  return res.json(availabilities);
 }
